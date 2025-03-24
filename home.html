@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root&Rise</title>`
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" media="screen">
+
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"><i class="fa-solid fa-leaf" style="color: #25b052;"></i>  Root&Rise</a>
+    <nav class="navbar">
+      
+              <a href="#home">Shop plants</a>  
+              <a href="#features">Catagories</a>  
+              <a href="#products">Plant Care</a>  
+              <a href="#categories">About Us</a>   
+        
+    </nav>
+
+    <div class="icons">
+      <div class="fas fa-bars" id="menu-btn"></div>
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-user" id="login-btn"></div>
+      <div class="fa-solid fa-headset" id="headset-btn"></div>
+  </div>
+
+  <div class="headset-popup">
+    <div class="headset-content">
+        <h3>Plant Care Assistant</h3>
+        <div class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask about plants...">
+            <button>Send</button>
+        </div>
+    </div>
+</div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon seed</h3>
+                <span class="price">₹50/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion seedlings</h3>
+                <span class="price">₹80/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>money plant</h3>
+                <span class="price">₹100/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total">total : $19.69/-</div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <p>Become a Nursery Partner <a href="https://karthik-v202.github.io/Root-Rise/login.html">register now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+<br>
+<br>
+<br>
+<main class="main">
+    <section class="home section--lg">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <p class="home__subtitle"><b>Bring Nature</b></p><p class="indoor">Indoors</p>
+            <div>
+             <p class="home__description">
+              <p class="p"> 
+                Discover our collection of beautiful indoor and outdoor plants to transform your space into a green sanctuary.
+            </p>
+            </div>
+            <a href="shop.html" class="btn">Shop Now</a>
+            <a href="Care.html" class="btn">Plant Care Tips</a>
+          </div>
+          <img src="home.webp" alt="" class="home__img">
+        </div>
+      </section>
+</main>
+
+<section class="sec bg-white">
+  <div class="container mx-auto px-8 py-4 bg-gray-100">
+    <h1 class="text-4xl font-bold text-center mb-10" id="fea">Featured Plants</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+            <div class="p-8 bg-white">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full mb-4">Indoor</span>
+                <div class="flex justify-center items-center h-64 mb-4">
+                    <img src="C:\Users\HP\Desktop\test\catagory-1.webp" alt="Monstera Deliciosa" class="max-w-full h-full object-cover rounded-md" />
+                </div>
+                <h3 class="text-xl font-semibold mb-2"><a href="#" class="monst">Monstera Deliciosa</a></h3>
+                <div class="flex items-center mb-3">
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">(4.8)</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-2xl font-bold text-green-600">$39.99</span>
+                    <button class="text-white bg-green-600 hover:bg-green-700 rounded-full p-3">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+            <div class="p-6">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full mb-4">Indoor</span>
+                <div class="flex justify-center items-center h-64 mb-4">
+                    <img src="C:\Users\HP\Desktop\test\snakeplant.webp" alt="Snake Plant" class="max-w-full h-full object-cover rounded-md" />
+                </div>
+                <h3 class="text-xl font-semibold mb-2"><a href="#" class="monst">Snake Plant</a></h3>
+                <div class="flex items-center mb-3">
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">(4.7)</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-2xl font-bold text-green-600">$29.99</span>
+                    <button class="text-white bg-green-600 hover:bg-green-700 rounded-full p-3">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+            <div class="p-6">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full mb-4">Indoor</span>
+                <div class="flex justify-center items-center h-64 mb-4">
+                    <img src="C:\Users\HP\Desktop\test\Fiddle Leaf Fig.jpg" alt="Fiddle Leaf Fig" class="max-w-full h-full object-cover rounded-md" />
+                </div>
+                <h3 class="text-xl font-semibold mb-2"><a href="#" class="monst">Fiddle Leaf Fig</a></h3>
+                <div class="flex items-center mb-3">
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">(4.7)</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-2xl font-bold text-green-600">$29.99</span>
+                    <button class="text-white bg-green-600 hover:bg-green-700 rounded-full p-3">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
+            <div class="p-6">
+                <span class="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full mb-4">Indoor</span>
+                <div class="flex justify-center items-center h-64 mb-4">
+                    <img src="C:\Users\HP\Desktop\test\Peace Lily.jpg" alt="Peace Lily" class="max-w-full h-full object-cover rounded-md" />
+                </div>
+                <h3 class="text-xl font-semibold mb-2"><a href="#" class="monst">Peace Lily</a></h3>
+                <div class="flex items-center mb-3">
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="ml-2 text-gray-600">(4.7)</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-2xl font-bold text-green-600">$29.99</span>
+                    <button class="text-white bg-green-600 hover:bg-green-700 rounded-full p-3">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-8">
+    <button class="bg-green-600 text-black px-11 py-9 rounded-full text-lg hover:bg-green-600 hover:text-white" >
+     Browse All Plants
+     <i class="fas fa-arrow-right">
+     </i>
+    </button>
+   </div>
+</section>
+<br><br><br>
+
+<footer>
+    <section>    
+        <div id="containerFooter">
+            
+            <div id="webFooter">
+                <h2>Root&Rise</h2>
+                <br>
+                <p>Your one-stop destination for beautiful plants and expert care advice.</p>
+            </div>
+            <div id="webFooter">
+                <h2>Shop</h2>
+                <br>
+                <p> All Plants </p>
+                <p> Categories </p>
+                <p> On Sale </p>
+                <p> New Arrivals </p>
+            </div>
+            <div id="webFooter">
+                <h2> Care </h2>
+                <br>
+                <p> Care Assistant </p>
+                <p> Plant Guides</p>
+                <p> Plant Identification</p>
+                <p> Care Schedule</p>
+            </div>
+            <div id="webFooter">
+                <h2> Contact </h2>
+                <br>
+                <p> Email: hello@planthaven.com</p>
+                <p> Phone: (555) 123-4567 </p>
+                <p> Address: 123 Green St, Plant City</p>
+            </div>
+        </div>
+        <div id="credit"><a>EIPR Project </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a> Root&Rise</a></div>
+    </section>
+
+</footer>
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root&Rise</title>`
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" media="screen">
+
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\git demo\carepage.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"><i class="fa-solid fa-leaf" style="color: #25b052;"></i>  Root&Rise</a>
+    <nav class="navbar">
+      
+              <a href="#home">Shop plants</a>  
+              <a href="#features">Catagories</a>  
+              <a href="#products">Plant Care</a>  
+              <a href="#categories">About Us</a>   
+        
+    </nav>
+
+    <div class="icons">
+      <div class="fas fa-bars" id="menu-btn"></div>
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-user" id="login-btn"></div>
+      <div class="fa-solid fa-headset" id="headset-btn"></div>
+  </div>
+
+  <div class="headset-popup">
+    <div class="headset-content">
+        <h3>Plant Care Assistant</h3>
+        <div class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask about plants...">
+            <button>Send</button>
+        </div>
+    </div>
+</div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon seed</h3>
+                <span class="price">₹50/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion seedlings</h3>
+                <span class="price">₹80/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>money plant</h3>
+                <span class="price">₹100/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total">total : $19.69/-</div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <p>Become a Nursery Partner <a href="https://karthik-v202.github.io/Root-Rise/login.html">register now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+<br>
+<br>
+<br>
+
+<section class="bg-[#15803d] text-white text-center py-5 m-auto">
+  <h1 class="text-6xl font-bold">
+   Plant Care Assistant
+  </h1>
+  <p class="mt-2 text-2xl mb-6">
+   Your personal guide to keeping your plants healthy and thriving. Identify plants, get care tips, and create custom care schedules.
+  </p>
+  <div class="mt-6">
+   <button class="bg-white text-green-600 font-semibold py-4 px-8 rounded-full mx-2 hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    <a href="#">Identify a Plant</a>
+   </button>
+   <button class="bg-white text-green-600 font-semibold py-4 px-8 rounded-full mx-2 hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    <a href="#">Create Care Schedule</a>
+   </button>
+   <button class="bg-white text-green-600 font-semibold py-4 px-8 rounded-full mx-2 hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    <a href="#">Browse Care Guides</a>
+   </button>
+  </div>
+ </section>
+    <br>
+ <!-- Identify Your Plant Section -->
+ <section class="text-center py-16">
+  <h2 class="text-4xl font-semibold mb-6 text-black">
+   Identify Your Plant
+  </h2>
+  <div class="bg-white shadow-md rounded-lg inline-block p-32 border-dashed border-2 border-gray-300">
+   <i class="fas fa-camera text-4xl text-gray-400 mb-4">
+   </i>
+   <p class="mb-4 text-2xl">
+    Upload a photo of your plant
+   </p>
+   <p class="mb-6 text-2xl">
+    Take a clear photo of the plant you want to identify
+   </p>
+   <button class="bg-green-600 text-white font-semibold py-6 px-12 rounded-full hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    Upload Image
+   </button>
+  </div>
+ </section>
+ <br>
+
+ <section class="text-center py-40 bg-gray-50">
+  <h2 class="text-4xl font-semibold mb-20 text-black">
+   Create Your Plant Care Schedule
+  </h2>
+  <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
+   <div class="bg-white shadow-md rounded-lg p-20 w-full md:w-1/3">
+    <h3 class="text-3xl font-semibold mb-4">
+     Your Plant Collection
+    </h3>
+    <p class="mb-4 text-2xl">
+     Add your plants to create a personalized care schedule. We'll remind you when it's time to water, fertilize, or repot.
+    </p>
+    <button class="bg-green-600 text-white font-semibold py-5 px-12 rounded-full hover:bg-green-700 transition-colors duration-300 hover:text-white">
+     Add a Plant
+    </button>
+   </div>
+   <div class="bg-white shadow-md rounded-lg p-24 w-full md:w-1/3">
+    <h3 class="text-3xl font-semibold mb-10">
+     Upcoming Tasks
+    </h3>
+    <ul class="text-left">
+     <li class="mb-2 flex items-center">
+      <i class="fas fa-check-circle text-green-600 mr-2"></i>
+      <p class="text-2xl">Water Monstera Deliciosa</p>
+     </li>
+     <li class="mb-2 flex items-center">
+      <i class="fas fa-check-circle text-green-600 mr-2"></i>
+        <p class="text-2xl">Fertilize Snake Plant</p>
+     </li>
+     <li class="mb-2 flex items-center">
+      <i class="fas fa-check-circle text-green-600 mr-2">
+      </i>
+      <p class="text-2xl">Fiddle Leaf Fig</p> 
+     </li>
+    </ul>
+   </div>
+  </div>
+ </section>
+ <br>
+
+ <section class="text-center py-30">
+  <h2 class="text-4xl font-semibold mb-6 text-black">
+   Plant Care Guides
+  </h2>
+  <div class="mb-6">
+   <input class="border border-black rounded-full py-10 px-12 w-1/2 text-2xl" placeholder="Search care guides..." type="text"/>
+  </div>
+  <div class="flex justify-center space-x-4 mb-8">
+   <button class="bg-green-600 text-white font-semibold py-4 px-6 rounded-full hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    All
+   </button>
+   <button class="bg-gray-200 text-gray-600 font-semibold py-4 px-6 rounded-full hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    Watering
+   </button>
+   <button class="bg-gray-200 text-gray-600 font-semibold py-4 px-6 rounded-full hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    Light
+   </button>
+   <button class="bg-gray-200 text-gray-600 font-semibold py-4 px-6 rounded-full hover:bg-green-700 transition-colors duration-300 hover:text-white">
+    Soil
+   </button>
+  </div>
+  <br><br><br>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0">
+   <div class="bg-white shadow-md rounded-lg p-10">
+    <img alt="Guide Image" class="w-full h-48.5 object-contain mb-4" height="100" src="C:\Users\HP\Desktop\git demo\src\watering.jpg" width="100"/>
+    <h3 class="text-2xl font-semibold mb-2">
+     How to Water Your Plants Properly
+    </h3>
+    <p class="text-gray-600 mb-4 text-xl">
+     Learn the best watering practices to keep your plants healthy and thriving.
+    </p>
+    <a class="text-green-600 font-semibold text-xl" href="#">
+     Read More
+    </a>
+   </div>
+   <div class="bg-white shadow-md rounded-lg p-6">
+    <img alt="Guide Image" class="w-full h-48.5 object-cover mb-4" height="100" src="C:\Users\HP\Desktop\git demo\src\light.jpg" width="100"/>
+    <h3 class="text-2xl font-semibold mb-2">
+     Understanding Plant Light Requirements
+    </h3>
+    <p class="text-gray-600 mb-4 text-xl">
+     Find out how much light your plants need to grow and thrive.
+    </p>
+    <a class="text-green-600 font-semibold text-xl" href="#">
+     Read More
+    </a>
+   </div>
+   <div class="bg-white shadow-md rounded-lg p-6">
+    <img alt="Guide Image" class="w-full h-48.5 object-cover mb-4" height="100" src="C:\Users\HP\Desktop\git demo\src\soil.jpg" width="100"/>
+    <h3 class="text-2xl font-semibold mb-2">
+     Soil Types and Potting Mixes
+    </h3>
+    <p class="text-gray-600 mb-4 text-xl">
+     Learn about different types of soil and potting mixes for your plants.
+    </p>
+    <a class="text-green-600 font-semibold text-xl" href="#">
+     Read More
+    </a>
+   </div>
+   <div class="bg-white shadow-md rounded-lg p-6">
+    <img alt="Guide Image" class="w-full h-48.5 object-cover mb-4" height="100" src="C:\Users\HP\Desktop\git demo\src\pest.jpg" width="100"/>
+    <h3 class="text-2xl font-semibold mb-2">
+     Common Plant Pests and How to Treat Them
+    </h3>
+    <p class="text-gray-600 mb-4 text-xl">
+     Identify and treat common plant pests to keep your plants healthy.
+    </p>
+    <a class="text-green-600 font-semibold text-xl" href="#">
+     Read More
+    </a>
+   </div>
+   <div class="bg-white shadow-md rounded-lg p-6">
+    <img alt="Guide Image" class="w-full h-48.5 object-cover mb-4" height="100" src="C:\Users\HP\Desktop\git demo\src\propagation.jpg" width="100"/>
+    <h3 class="text-2xl font-semibold mb-2">
+     Propagation Techniques for Beginners
+    </h3>
+    <p class="text-gray-600 mb-4 text-xl">
+     Learn how to propagate your plants and grow new ones from cuttings.
+    </p>
+    <a class="text-green-600 font-semibold text-xl" href="#">
+     Read More
+    </a>
+   </div>
+   <div class="bg-white shadow-md rounded-lg p-6">
+    <img alt="Guide Image" class="w-full h-48.5 object-cover mb-4" height="100" src="C:\Users\HP\Desktop\git demo\src\plantcare.jpg" width="100"/>
+    <h3 class="text-2xl font-semibold mb-2">
+     Seasonal Plant Care Guide
+    </h3>
+    <p class="text-gray-600 mb-4 text-xl">
+     Adjust your plant care routine with the changing seasons to keep your plants thriving.
+    </p>
+    <a class="text-green-600 font-semibold text-xl" href="#">
+     Read More
+    </a>
+   </div>
+  </div>
+  <button class="bg-green-600 text-white font-semibold py-10 px-14 rounded-full mt-6 text-2xl">
+   View All Guides
+  </button>
+ </section>
+ <br>
+<br><br>
+
+ <section>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 md:mx-auto flex flex-col md:flex-row">
+        <div class="bg-gray-100 flex items-center justify-center w-full md:w-1/2 p-15">
+            <img alt="query" class="w-full h-48.5 object-cover mb-4" height="100" src="C:\Users\HP\Desktop\git demo\src\ask.jpg" width="100"/>
+            <div class="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center">
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 p-8">
+            <h2 class="text-3xl font-bold mb-4">Ask a Plant Expert</h2>
+            <p class="text-gray-600 mb-4 text-2xl">Have a specific plant care question? Our team of plant experts is here to help you with personalized advice.</p>
+            <form>
+                <label for="question" class="block text-gray-700 mb-2 text-xl">Your Question</label>
+                <textarea id="question" class="w-full border border-gray-300 rounded-lg p-4 mb-8" rows="4" placeholder="Type your plant care question here..."></textarea>
+                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-300">
+                    Submit Question <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+ </section>
+ <br><br>   
+
+ <footer>
+    <section>    
+        <div id="containerFooter">
+            
+            <div id="webFooter">
+                <h2>Root&Rise</h2>
+                <br>
+                <p>Empowering Local Nurseries: The core focus is on uplifting the small and medium-sized nurseries that are the backbone of the local green economy.</p>
+            </div>
+            <div id="webFooter">
+                <h2>Shop</h2>
+                <br>
+                <p> All Plants </p>
+                <p> Categories </p>
+                <p> On Sale </p>
+                <p> New Arrivals </p>
+            </div>
+            <div id="webFooter">
+                <h2> Care </h2>
+                <br>
+                <p> Care Assistant </p>
+                <p> Plant Guides</p>
+                <p> Plant Identification</p>
+                <p> Care Schedule</p>
+            </div>
+            <div id="webFooter">
+                <h2> Contact </h2>
+                <br>
+                <p> Email: hello@planthaven.com</p>
+                <p> Phone: (555) 123-4567 </p>
+                <p> Address: 123 Green St, Plant City</p>
+            </div>
+        </div>
+        <div id="credit"><a>EIPR Project </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a> Root&Rise</a></div>
+    </section>
+
+</footer>
+
+
+<script src="C:\Users\HP\Desktop\git demo\carepage.js"></script>
+</body>
+</html>

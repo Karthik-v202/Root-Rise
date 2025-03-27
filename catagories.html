@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root&Rise</title>`
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" media="screen">
+
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\git demo\catagories.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"><i class="fa-solid fa-leaf" style="color: #25b052;"></i>  Root&Rise</a>
+    <nav class="navbar">
+      
+              <a href="#home">Shop plants</a>  
+              <a href="#features">Catagories</a>  
+              <a href="#products">Plant Care</a>  
+              <a href="#categories">About Us</a>   
+        
+    </nav>
+
+    <div class="icons">
+      <div class="fas fa-bars" id="menu-btn"></div>
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-user" id="login-btn"></div>
+      <div class="fa-solid fa-headset" id="headset-btn"></div>
+  </div>
+
+  <div class="headset-popup">
+    <div class="headset-content">
+        <h3>Plant Care Assistant</h3>
+        <div class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" placeholder="Ask about plants...">
+            <button>Send</button>
+        </div>
+    </div>
+</div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon seed</h3>
+                <span class="price">₹50/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion seedlings</h3>
+                <span class="price">₹80/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>money plant</h3>
+                <span class="price">₹100/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total">total : ₹230/-</div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <p>Become a Nursery Partner <a href="https://karthik-v202.github.io/Root-Rise/login.html">register now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+<br>
+<br>
+<br>
+
+<section class="bg-[#15803d] text-white text-center py-12 m-auto">
+  <h1 class="text-8xl font-bold">
+    Plant Categories
+  </h1>
+  <p class="mt-2 text-2xl mb-6">
+    Explore our diverse collection of plants organized by categories to find the perfect addition to your space.
+  </p>
+  <div class="mb-6">
+    <input class="border border-black rounded-full py-10 px-12 w-1/2 text-2xl text-black" placeholder="Search care guides..." type="text"/>
+   </div>
+ </section>
+    <br>
+
+<section>
+    <div class="max-w-7xl mx-auto p-15">
+        <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row">
+         <div class="md:w-1/2 p-6">
+          <h2 class="text-green-600 font-semibold text-2xl">
+           FEATURED CATEGORY
+          </h2>
+          <h1 class="text-4xl font-bold mt-2 gap-8">
+           Indoor Plants
+          </h1>
+          <p class="text-gray-600 mt-4 text-2xl">
+           Our most popular category, indoor plants are perfect for adding life to your home or office. These plants thrive in indoor conditions and many require minimal care.
+          </p>
+          <ul class="mt-6 space-y-2">
+           <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-green-600 mr-2">
+            </i>
+            <p class="text-2xl">Low maintenance options available</p>
+           </li>
+           <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-green-600 mr-2">
+            </i>
+            <p class="text-2xl">Purify air and reduce stress</p>
+           </li>
+           <li class="flex items-center text-gray-600">
+            <i class="fas fa-check text-green-600 mr-2">
+            </i>
+            <p class="text-2xl">Variety of sizes for any space</p>
+           </li>
+          </ul>
+          <button class="mt-10 bg-green-600 text-white px-14 py-2 rounded-lg hover:bg-green-700">
+            <p class="text-2xl">Explore Indoor Plants</p>
+           <i class="fas fa-arrow-right ml-2">
+           </i>
+          </button>
+         </div>
+         <div class="md:w-1/2 bg-green-50 p-10 rounded-lg">
+          <h2 class="text-xl font-bold mb-4">
+           Popular Indoor Plants
+          </h2>
+          <div class="grid grid-cols-2 gap-4">
+           <div class="bg-white p-4 rounded-lg shadow">
+            <img alt="Monstera Deliciosa" class="w-full h-32.5 object-cover rounded-lg mb-2" height="100" src="C:\Users\HP\Desktop\git demo\src\catagory-1.webp" width="100"/>
+            <h3 class="text-gray-800 text-2xl">
+             Monstera Deliciosa
+            </h3>
+            <p class="text-green-600 font-semibold text-xl">
+             ₹1,560
+            </p>
+           </div>
+           <div class="bg-white p-4 rounded-lg shadow">
+            <img alt="Fiddle Leaf Fig" class="w-full h-32.5 object-cover rounded-lg mb-2" height="100" src="C:\Users\HP\Desktop\git demo\src\Fiddle Leaf Fig.jpg" width="100"/>
+            <h3 class="text-gray-800 text-2xl">
+             Fiddle Leaf Fig
+            </h3>
+            <p class="text-green-600 font-semibold text-xl">
+            ₹1,430
+            </p>
+           </div>
+           <div class="bg-white p-4 rounded-lg shadow">
+            <img alt="Snake Plant" class="w-full h-32.5 object-cover rounded-lg mb-2" height="100" src="C:\Users\HP\Desktop\git demo\src\snakeplant.webp" width="100"/>
+            <h3 class="text-gray-800 text-2xl">
+             Snake Plant
+            </h3>
+            <p class="text-green-600 font-semibold text-xl">
+            ₹399
+            </p>
+           </div>
+           <div class="bg-white p-4 rounded-lg shadow">
+            <img alt="ZZ Plant" class="w-full h-32.5 object-cover rounded-lg mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/5aN295hTJdbFdxQ4iCPrcSYyeNMLFgBdJbyECWr57ZE.jpg" width="100"/>
+            <h3 class="text-gray-800 text-2xl">
+             ZZ Plant
+            </h3>
+            <p class="text-green-600 font-semibold text-xl">
+            ₹840
+            </p>
+           </div>
+          </div>
+          <a class="text-green-600 mt-4 inline-block" href="#">
+           View all indoor plants
+           <i class="fas fa-arrow-right ml-1">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+</section>
+
+<section>
+    <div class="container mx-auto p-10">
+        <div class="flex justify-between items-center mb-6">
+         <h1 class="text-4xl font-bold">
+          Browse All Categories
+         </h1>
+         <div class="relative">
+          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-10 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline text-2xl">
+           <option>
+            Sort by: A-Z
+           </option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+           <i class="fas fa-chevron-down">
+           </i>
+          </div>
+         </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Indoor Plants" class="w-full h-40.1 object-cover" height="400" src="C:\Users\HP\Desktop\git demo\src\indoor.jpg" width="600"/>
+          <div class="p-8">
+           <h2 class="text-3xl font-bold text-black">
+            Indoor Plants
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Beautiful plants that thrive indoors with minimal sunlight.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           48 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Outdoor Plants" class="w-full h-40.1 object-cover" height="400" src="C:\Users\HP\Desktop\git demo\src\outdoor.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Outdoor Plants
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Hardy plants perfect for gardens, patios, and outdoor spaces.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           36 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Succulents" class="w-full h-40.1 object-cover" height="400" src="C:\Users\HP\Desktop\git demo\src\Succulents.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Succulents
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Water-storing plants in a variety of unique shapes and sizes.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           24 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Herbs" class="w-full h-40.1 object-cover" height="400" src="C:\Users\HP\Desktop\git demo\src\Herbs.webp" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Herbs
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Aromatic plants that add flavor to your cooking and home.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           18 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Flowering Plants" class="w-full h-40.1 object-cover" height="400" src="C:\Users\HP\Desktop\git demo\src\Flowering Plants.webp" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Flowering Plants
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Colorful blooming plants to brighten any space.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           22 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Air Plants" class="w-full h-40.1 object-cover" height="400" src="C:\Users\HP\Desktop\git demo\src\Air Plants.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Air Plants
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Low-maintenance plants that don't require soil to grow.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           15 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Cacti" class="w-full h-40.1 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/BJVUKw8nBB-vz842hAk9ztISbBLtXekTs37X9sajA60.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Cacti
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Drought-resistant plants with unique textures and forms.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           20 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Ferns" class="w-full h-40.1 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/-VPiOSFHQ_ss7M2-eXCxrDIJboJ0ZUk-tvmdAfMC61I.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Ferns
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Lush, leafy plants that add a touch of the forest to your home.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           12 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Bonsai Trees" class="w-full h-40.1 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/OAm1jOoveOF-XAsORY3OcaPGj7mPAI0nNYW9kaiAEgs.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Bonsai Trees
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Miniature trees that bring zen and artistry to your space.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           8 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Tropical Plants" class="w-full h-40.1 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/QTm3UUIkO5pYVMELSALeKatmRmPv-X2EhtesesCRvpk.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Tropical Plants
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Exotic plants that create a lush, vacation-like atmosphere.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           16 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Hanging Plants" class="w-full h-40.1 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e5Sv_xtqn0k9XkjKDmWYlG7l-AikC6tTzm7TWVieggE.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Hanging Plants
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Cascading plants perfect for hanging baskets and high shelves.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           14 plants
+          </div>
+         </div>
+         <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img alt="Pet-Friendly Plants" class="w-full h-40.1 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/nyjkHm5Scq7WUwYGMd-4MQpmPz2tUk524oBhQfPkTQg.jpg" width="600"/>
+          <div class="p-4">
+           <h2 class="text-3xl font-bold text-black">
+            Pet-Friendly Plants
+           </h2>
+           <p class="text-gray-600 text-xl">
+            Safe plants for homes with curious pets and children.
+           </p>
+          </div>
+          <div class="p-4 bg-gray-100 text-green-600 text-lg font-semibold">
+           19 plants
+          </div>
+         </div>
+        </div>
+       </div>
+</section>
+
+<footer>
+    <section>    
+        <div id="containerFooter">
+            
+            <div id="webFooter">
+                <h2>Root&Rise</h2>
+                <br>
+                <p>Your one-stop destination for beautiful plants and expert care advice.</p>
+            </div>
+            <div id="webFooter">
+                <h2>Shop</h2>
+                <br>
+                <p> All Plants </p>
+                <p> Categories </p>
+                <p> On Sale </p>
+                <p> New Arrivals </p>
+            </div>
+            <div id="webFooter">
+                <h2> Care </h2>
+                <br>
+                <p> Care Assistant </p>
+                <p> Plant Guides</p>
+                <p> Plant Identification</p>
+                <p> Care Schedule</p>
+            </div>
+            <div id="webFooter">
+                <h2> Contact </h2>
+                <br>
+                <p> Email: hello@planthaven.com</p>
+                <p> Phone: (555) 123-4567 </p>
+                <p> Address: 123 Green St, Plant City</p>
+            </div>
+        </div>
+        <div id="credit"><a>EIPR Project </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a> Root&Rise</a></div>
+    </section>
+
+</footer>
+
+
+
+    <script src="C:\Users\HP\Desktop\git demo\catagories.js"></script>
+</body>
+</html>

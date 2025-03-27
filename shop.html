@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root&Rise - Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" media="screen">
+
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body class="bg-honeydew">
+<header class="header">
+    <a href="home.html" class="logo"><i class="fa-solid fa-leaf" style="color: #25b052;"></i>  Root&Rise</a>
+    <nav class="navbar">
+        <a href="home.html">Shop plants</a>
+        <a href="catagories.html">Categories</a>
+        <a href="carepage.html">Plant Care</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fa-solid fa-headset" id="headset-btn"></div>
+    </div>
+
+    <div class="headset-popup">
+        <div class="headset-content">
+            <h3>Plant Care Assistant</h3>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Ask about plants...">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-1.png" alt="Watermelon Seed">
+            <div class="content">
+                <h3>watermelon seed</h3>
+                <span class="price">₹50/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-2.png" alt="Onion Seedlings">
+            <div class="content">
+                <h3>onion seedlings</h3>
+                <span class="price">₹80/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="photos/cart-img-3.png" alt="Money Plant">
+            <div class="content">
+                <h3>money plant</h3>
+                <span class="price">₹100/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total">total : $19.69/-</div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <p>Become a Nursery Partner <a href="https://karthik-v202.github.io/Root-Rise/login.html">register now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+<br>
+<br>
+<br>
+<section class="bg-honeydew py-16">
+    <div class="container mx-auto p-4">
+        <div class="flex flex-col lg:flex-row">
+            <!-- Filters Section -->
+            <div class="w-full lg:w-1/4 p-12 bg-white rounded-lg shadow-md mb-4 lg:mb-0 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-3xl font-semibold">Filters</h2>
+                    <a class="text-green-600 text-xl" href="#">Reset All</a>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-2 text-2xl">Categories</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="indoor-plants">
+                            <label class="ml-2 text-xl" for="indoor-plants">Indoor Plants (48)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="outdoor-plants">
+                            <label class="ml-2 text-xl" for="outdoor-plants">Outdoor Plants (36)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="succulents">
+                            <label class="ml-2 text-xl" for="succulents">Succulents (24)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="herbs">
+                            <label class="ml-2 text-xl" for="herbs">Herbs (18)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="flowering-plants">
+                            <label class="ml-2 text-xl" for="flowering-plants">Flowering Plants (22)</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-2 text-2xl">Price Range</h3>
+                    <ul>
+                        <li>
+                            <input type="radio" id="under-25" name="price">
+                            <label class="ml-2" for="under-25">Under $25</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="25-50" name="price">
+                            <label class="ml-2" for="25-50">$25 - $50</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="50-100" name="price">
+                            <label class="ml-2" for="50-100">$50 - $100</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="over-100" name="price">
+                            <label class="ml-2" for="over-100">Over $100</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-2">Care Level</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="easy">
+                            <label class="ml-2" for="easy">Easy</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="moderate">
+                            <label class="ml-2" for="moderate">Moderate</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="expert">
+                            <label class="ml-2" for="expert">Expert</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-2">Light Requirements</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="low-light">
+                            <label class="ml-2" for="low-light">Low Light</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="medium-light">
+                            <label class="ml-2" for="medium-light">Medium Light</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="bright-light">
+                            <label class="ml-2" for="bright-light">Bright Light</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="direct-sunlight">
+                            <label class="ml-2" for="direct-sunlight">Direct Sunlight</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="w-full lg:w-3/4 p-4">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-semibold">All Plants (124)</h2>
+                    <div class="flex items-center">
+                        <label class="mr-2 text-xl" for="sort">Sort by:</label>
+                        <select class="border rounded p-8" id="sort">
+                            <option><b>Featured</b></option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest Arrivals</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Product Card -->
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\catagory-1.webp" alt="Monstera Deliciosa" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Monstera Deliciosa</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.8)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹1,560</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\snakeplant.webp" alt="Snake Plant" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Snake Plant</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.7)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹399</span>
+                            <button  class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\Fiddle Leaf Fig.jpg" alt="Fiddle Leaf Fig" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Fiddle Leaf Fig</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹1,430</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                     <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\Peace Lily.jpg" alt="Peace Lily" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Peace Lily</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.6)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹840</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\ZZ-Plant.webp" alt="ZZ Plant" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">ZZ Plant</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.9)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹450</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\Pothos.jpg" alt="Pothos" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Pothos</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.7)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹180</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Succulent</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\Aloe Vera.jpg" alt="Aloe Vera" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Aloe Vera</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.5)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹50</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\Rubber Plant.jpg" alt="Rubber Plant" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Rubber Plant</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.6)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹399</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:shadow-xl hover:scale-105">
+                        <div class="relative">
+                            <span class="absolute top-2 left-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Indoor</span>
+                            <img src="C:\Users\HP\Desktop\git demo\src\Boston Fern.jpg" alt="Boston Fern" class="w-full h-40.5 object-contain mb-2">
+                        </div>
+                        <h3 class="text-lg font-semibold">Boston Fern</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-500"><i class="fas fa-star-half-alt"></i></span>
+                            <span class="ml-2 text-gray-600">(4.3)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">₹199</span>
+                            <button class="bg-green-600 text-white p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center items-center mt-4">
+                    <button class="px-3 py-1 border rounded-l">Previous</button>
+                    <button class="px-3 py-1 border">1</button>
+                    <button class="px-3 py-1 border">2</button>
+                    <button class="px-3 py-1 border">3</button>
+                    <span class="px-3 py-1">...</span>
+                    <button class="px-3 py-1 border rounded-r">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="shop.js"></script>
+</body>
+</html>
